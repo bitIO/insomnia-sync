@@ -1,0 +1,29 @@
+_id: req_1cce71a6261d48cd872a291b6d2c8daa
+type: Request
+parentId: fld_6f322a5c42ab4e7e83cf9eb960656e58
+modified: 1660262823912
+created: 1660262426851
+url: "{{ _.baseUrl }}/holidays/users/2"
+name: get from other
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_21bb19d37f744e2da6472b4f0e45d6d1
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_7dcfcde226ff4855a0681369e207b142',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'always', 60 %}"
+metaSortKey: -1660138877748.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

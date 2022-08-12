@@ -1,0 +1,30 @@
+_id: req_28e1e15758d344f8ab6680ff79742057
+type: Request
+parentId: fld_9eb09d81d3d94a98b5be221bcdcba503
+modified: 1660262536662
+created: 1660262477507
+url: "{{ _.baseUrl }}/auth/signin"
+name: sign in - approve
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "{{ _.approve.email }}",
+    	"password": "{{ _.approve.password }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a856f144d281451c99f548963d582b22
+authentication: {}
+metaSortKey: -1660138506618
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

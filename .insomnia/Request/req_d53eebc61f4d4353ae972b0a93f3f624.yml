@@ -1,0 +1,30 @@
+_id: req_d53eebc61f4d4353ae972b0a93f3f624
+type: Request
+parentId: fld_9eb09d81d3d94a98b5be221bcdcba503
+modified: 1660262315708
+created: 1660105352469
+url: http://localhost:3333/auth/signup
+name: sign up - user
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "{{ _.user.email }}",
+    	"password": "{{ _.user.password }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_461e9dbc0e2a4f6d8d9959e456e72d58
+authentication: {}
+metaSortKey: -1660138506718
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

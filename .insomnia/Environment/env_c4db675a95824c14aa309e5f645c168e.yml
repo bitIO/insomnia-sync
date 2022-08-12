@@ -1,0 +1,35 @@
+_id: env_c4db675a95824c14aa309e5f645c168e
+type: Environment
+parentId: env_fc7122089340a3e6d8e7c192c81c6380840da5e0
+modified: 1660262276456
+created: 1660138705253
+name: Local
+data:
+  baseUrl: http://localhost:3333
+  user:
+    email: user@savispain.es
+    password: "12345678"
+  approve:
+    email: aprove@savispain.es
+    password: "12345678"
+  admin:
+    email: admin@savispain.es
+    password: "12345678"
+dataPropertyOrder:
+  "&":
+    - baseUrl
+    - user
+    - approve
+    - admin
+  "&~|user":
+    - email
+    - password
+  "&~|approve":
+    - email
+    - password
+  "&~|admin":
+    - email
+    - password
+color: null
+isPrivate: false
+metaSortKey: 1660138705253

@@ -1,0 +1,30 @@
+_id: req_552ca405de9b42fc92869d7286c2d830
+type: Request
+parentId: fld_9eb09d81d3d94a98b5be221bcdcba503
+modified: 1660262511770
+created: 1660262501510
+url: "{{ _.baseUrl }}/auth/signin"
+name: sign in - admin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "{{ _.admin.password }}",
+    	"password": "{{ _.admin.password }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a856f144d281451c99f548963d582b22
+authentication: {}
+metaSortKey: -1660138506568
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_707dd6d31d9d4b0a8d872bfc6fa296cb
+type: Request
+parentId: fld_fc5815314e784da79792b6043ccc253e
+modified: 1660262833676
+created: 1660262460711
+url: "{{ _.baseUrl }}/users/1/roles"
+name: edit role
+description: ""
+method: PATCH
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"role": ["USER", "ADMIN"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_b6789e298ec140738e62723c8c648672
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_28e1e15758d344f8ab6680ff79742057',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'always', 60 %}"
+metaSortKey: -1660138692227
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

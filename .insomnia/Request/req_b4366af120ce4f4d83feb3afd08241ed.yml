@@ -1,0 +1,33 @@
+_id: req_b4366af120ce4f4d83feb3afd08241ed
+type: Request
+parentId: fld_6f322a5c42ab4e7e83cf9eb960656e58
+modified: 1660262349235
+created: 1660215320267
+url: "{{ _.baseUrl }}/holidays"
+name: create request
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"start": "2022-09-11T10:51:22.356Z",
+    	"end": "2022-08-11T10:51:22.356Z"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_21bb19d37f744e2da6472b4f0e45d6d1
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_7dcfcde226ff4855a0681369e207b142',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'always', 60 %}"
+metaSortKey: -1660138877786
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

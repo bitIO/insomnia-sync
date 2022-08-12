@@ -1,0 +1,35 @@
+_id: req_6c98cefc002f4b2faaed0d293c6ee9ac
+type: Request
+parentId: fld_fc5815314e784da79792b6043ccc253e
+modified: 1660262951643
+created: 1660243585028
+url: "{{ _.baseUrl }}/holidays/1/validations"
+name: change status - rejected
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"validatorId": 1,
+    	"holidayRequestId": 1,
+    	"status": "REJECTED",
+    	"comment": "Not valid period"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_21bb19d37f744e2da6472b4f0e45d6d1
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_7dcfcde226ff4855a0681369e207b142',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'always', 60 %}"
+metaSortKey: -1660138692177
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
